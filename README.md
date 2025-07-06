@@ -24,6 +24,8 @@ Ein KI-gestütztes Stichproben-Tool, das die Rechnungsvalidierung durch Verarbei
 - Multi-Engagement-Dashboard zur Verwaltung verschiedener Prüfungsprojekte
 - Verarbeitungsstatus-Anzeige mit Ergebnisvisualisierung
 
+![Demo](assets/demo_ki_stichprobenassistent.gif)
+
 **Technologie-Stack:** React, Material-UI, Flask, Python, Predibase/Ollama LLM Integration, pandas, PDF-Verarbeitung
 
 ## Architektur & Workflow
