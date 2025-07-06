@@ -11,6 +11,10 @@ Willkommen zu meiner Sammlung privater Projekte. Dieses Repository dient als Pr�
 
 Ein KI-gest체tztes Stichproben-Tool, das die Rechnungsvalidierung durch Verarbeitung von Excel-Stichprobendateien und entsprechenden PDF-Rechnungen mit LLM Technologie automatisiert. Das Tool hilft dabei, manuelle Pr체fungsarbeiten zu reduzieren und gleichzeitig Genauigkeit und Compliance-Standards zu gew채hrleisten.
 
+**Videodemonstration:**
+
+![Demo](assets/demo_ki_stichprobenassistent.gif)
+
 **Hauptfunktionen:**
 - Rechnungstext-Extraktion und -Analyse mit LLM-Modellen (Qwen3-14B)
 - Automatisierte Validierung von Artikelnummer und -beschreibung gegen Quelldokumente
@@ -19,8 +23,6 @@ Ein KI-gest체tztes Stichproben-Tool, das die Rechnungsvalidierung durch Verarbei
 - Audit-Trail mit LLM-Interaktionsprotokollierung
 - Multi-Engagement-Dashboard zur Verwaltung verschiedener Pr체fungsprojekte
 - Verarbeitungsstatus-Anzeige mit Ergebnisvisualisierung
-
-![Demo](assets/demo_ki_stichprobenassistent.gif)
 
 **Technologie-Stack:** React, Material-UI, Flask, Python, Predibase/Ollama LLM Integration, pandas, PDF-Verarbeitung
 
