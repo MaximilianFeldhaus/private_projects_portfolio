@@ -7,6 +7,7 @@ Willkommen zu meiner Sammlung privater Projekte. Dieses Repository dient als Pr�
 # Stichprobenassistent f체r Wirtschaftspr체fer
 
 **Status:** In Bearbeitung | **Kategorie:** Financial Technology / Pr체fungssoftware
+**Link zum Repo** Das Repo ist privat. Auf Wunsch gebe ich gerne Zugriff auf den Code.
 
 Ein KI-gest체tztes Stichproben-Tool, das die Rechnungsvalidierung durch Verarbeitung von Excel-Stichprobendateien und entsprechenden PDF-Rechnungen mit LLM Technologie automatisiert. Das Tool hilft dabei, manuelle Pr체fungsarbeiten zu reduzieren und gleichzeitig Genauigkeit und Compliance-Standards zu gew채hrleisten.
 
@@ -18,6 +19,8 @@ Ein KI-gest체tztes Stichproben-Tool, das die Rechnungsvalidierung durch Verarbei
 - Audit-Trail mit LLM-Interaktionsprotokollierung
 - Multi-Engagement-Dashboard zur Verwaltung verschiedener Pr체fungsprojekte
 - Verarbeitungsstatus-Anzeige mit Ergebnisvisualisierung
+
+![Demo](assets/demo_ki_stichprobenassistent.gif)
 
 **Technologie-Stack:** React, Material-UI, Flask, Python, Predibase/Ollama LLM Integration, pandas, PDF-Verarbeitung
 
