@@ -4,7 +4,7 @@ Willkommen zu meiner Sammlung privater Projekte. Dieses Repository dient als Pr�
 
 ---
 
-# Stichprobenassistent f체r Wirtschaftspr체fer
+# KI-basierter Stichprobenassistent f체r Wirtschaftspr체fer
 
 **Status:** In Bearbeitung | **Kategorie:** Financial Technology / Pr체fungssoftware
 **Link zum Repo** Das Repo ist privat. Auf Wunsch gebe ich gerne Zugriff auf den Code.
