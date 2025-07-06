@@ -38,3 +38,34 @@ Ein KI-gestütztes Stichproben-Tool, das die Rechnungsvalidierung durch Verarbei
 3. Textextraktion und Artikel-Matching mit LLM
 4. Betragsvalidierung zwischen gebuchten und berechneten Werten
 5. Reporting mit Audit-Trail
+
+# DivideMix for noisy text classification
+
+**Status:** Vollständig implementiert | **Kategorie:** Machine Learning / Natural Language Processing  
+**Link zum Repo:** https://github.com/LiJunnan1992/DivideMix (Original) | https://github.com/MaximilianFeldhaus/DivideMix-for-noisy-text-classification (Meine Anwendung für Textdaten statt Bilder)
+
+Eine Adaption der DivideMix-Methode für robuste Textklassifizierung in Anwesenheit von noisyLabels. Das Projekt überträgt die ursprünglich für Bildklassifizierung entwickelte DivideMix-Technik auf die Textverarbeitung mittels BERT-Transformern und ermöglicht somit effektives Training trotz unzuverlässiger Trainingslabels. Dieses Projekt entstammt originär aus meinem Seminar Advanced Topics in Machine Learning im Master Information Systems.
+
+**Hauptfunktionen:**
+- Robuste Textklassifizierung mit noisy Labels durch DivideMix-Algorithmus
+- BERT-basierte Merkmalsextraktion statt CNN-Architekturen
+- Textaugmentierung mit WordNet-Synonymen für bessere Generalisierung
+- MixUp-Techniken auf Embedding-Ebene für Textdaten
+- Automatische Erkennung und Behandlung von Clean/Noisy-Samples
+- Unterstützung für symmetrische und asymmetrische Noise-Modi
+- Dynamisches Batch-Padding für variable Textlängen
+
+**Technologie-Stack:** Python, PyTorch, Transformers (BERT), NLTK/WordNet, scikit-learn, NumPy
+
+## Architektur & Workflow
+
+**Modellarchitektur:** BERT-Transformer für Sequenzklassifizierung mit angepasster DivideMix-Trainings-Pipeline für Text-spezifische Herausforderungen.
+
+**Datenverarbeitung:** Tokenisierung mit BERT-Tokenizer, dynamisches Padding für Batch-Verarbeitung, WordNet-basierte Textaugmentierung zur Erhöhung der Datenvielfalt.
+
+**Kern-Workflow:**
+1. **Warmup-Phase:** Standardtraining auf allen Daten zur Modellinitialisierung
+2. **Sample-Auswahl:** Gaussian Mixture Model zur Unterscheidung zwischen Clean- und Noisy-Samples
+3. **Co-Training:** Zwei Netzwerke trainieren sich gegenseitig mit unterschiedlichen Datenaufteilungen
+4. **MixUp-Regularisierung:** Lineare Interpolation auf Embedding-Ebene für bessere Generalisierung
+5. **Semi-Supervised Learning:** Verwendung von Clean-Samples als gelabelte und Noisy-Samples als ungelabelte Daten
